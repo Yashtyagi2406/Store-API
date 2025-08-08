@@ -30,7 +30,7 @@ app.use('/api/v1/products', productsRouter)
     try {
         // connectDB
         await connectDB(process.env.MONGO_URI)
-        app.listen(port, console.log(`Server is lostening on ${port}...`))
+        app.listen(port, console.log(`Server is listening on ${port}...`))
     } catch (error) {
         console.log(error);
     }
